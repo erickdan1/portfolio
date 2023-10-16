@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- head define informações do documento -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Portifolio Erick Daniel</title>
+</head>
+<body>
+    <div class="container">
+        <!-- nav define links de navegação -->
+        <nav>
+            <div class="logo">portifolio<b>.</b></div>
+            <!-- ul cria uma lista desordenada -->
+            <ul class="navItems">
+                <!-- li = list items -->
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/erickdan/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/erickdan1"><i class="fab fa-github"></i></a>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Olá!</span>
+                <span class="topline1">Me chamo Erick &#x1F44B;</span>
+                <h1>Sou <span class="multiText"></span></h1>
+                <p>Atualmente sou aluno do Centro de Informática da UFPE, cursando Sistemas de Informação (SI).</p>
+                <p>Venho me qualificando para o mercado de TI, criando experiência com linguagem de programação Python, tecnologias contemporâneas, trabalho em equipe e liderança.</p>
+                <div class="btns">
+                    <button><a href="anexos/Currículo Erick Daniel.pdf" download>Download CV</a></button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="anexos/fotoperfilnobg.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".multiText", {
+            strings : ["desenvolvedor", "bacharelando em sI"],
+            loop : true,
+            typeSpeed : 80,
+            backSpeed : 40
+        })
+    </script>
+</body>
+</html>
