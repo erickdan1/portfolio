@@ -7,180 +7,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     <link rel="stylesheet" href="style.css"> 
-    <title>Portifolio Erick Daniel</title>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>3D Portifolio Erick Daniel</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portifolio</a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <nav class="navBar">
-            <a href="#inicio" class="active">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#skills">Skills</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-
-        <div class="social-media">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-
-    </header>
-        <!-- Design - Inicio -->
-    <section class="inicio" id="inicio">
-        <div class="inicio-content">
-            <h3>Olá!</h3>
-            <h1>Me chamo Erick&#x1F44B;</h1>
-            <h3>Sou <span>Desenvolvedor</span></h3>
-            <p>Atualmente sou aluno do Centro de Informática da UFPE, cursando Sistemas de Informação (SI). <br><br> Venho me qualificando para o mercado de TI, criando experiência com linguagem de programação Python, tecnologias contemporâneas, trabalho em equipe e liderança.</p>
-
-            
-            <a href="#" class="btn">Baixar CV</a>
-        </div>
-        
-        <div class="inicio-img">
-            <img src="anexos/mult-removebg-preview.png" alt="">
-        </div>
-
-    </section>
-
-    <!-- Design - Sobre -->
-    <section class="sobre" id="sobre">
-        <div class="sobre-img">
-            <img src="anexos/perfil2-removebg-preview.png" alt="">
-            <span class="circle-spin"></span>
-        </div>
-        <div class="sobre-content">
-            <h2 class="heading">Sobre <span>Mim</span></h2>
-            <h3>Desenvolvedor</h3>
-            <p>Sou um desenvolvedor dedicado que está aprimorando as habilidades em Python e explorando tecnologias contemporâneas. <br><br> Estou pronto para colaborar em projetos desafiadores e estou comprometido com a aprendizagem contínua e o crescimento na indústria de tecnologia.</p>
-        </div>
-    </section>
-
-    <!-- Design - Skils -->
-    <section class="skills" id="skills">
-        <h2 class="heading">Minhas <span>Skills</span></h2>
-
-        <div class="skills-container">
-
-            <div class="skills-box">
-                <!-- Versionamento de código, linguagens, Bibliotecas python análise de dados (pandas, openxl, plotly), Frameworks python (Dash, Pygame), Básico de html e css -->
-                <i class="fa-brands fa-python"></i>
-                <h3>Conhecimento Sólido em Python</h3>
-                <p>O conhecimento sólido em Python é uma ferramenta valiosa para a resolução de problemas complexos, oferecendo simplicidade, flexibilidade e capacidade de integração com tecnologias contemporâneas. Aplico esse conhecimento na busca de soluções inovadoras e eficazes em diversos projetos e desafios. </p>
-                
-            </div>
-
-            <div class="skills-box">
-                <i class="fa-solid fa-book-open"></i>
-                <h3>Bibliotecas e Frameworks</h3>
-                <p>Python é uma linguagem de programação que brilha não apenas por sua sintaxe clara e legibilidade, mas também pela vasta variedade de bibliotecas e frameworks disponíveis, que a tornam uma escolha poderosa para a solução de problemas em diversas áreas. Essas ferramentas prontas para uso aceleram o desenvolvimento e permitem a criação de soluções eficientes e inovadoras. </p>
-
-            </div>
-
-            <div class="skills-box">
-                <!-- Versionamento de código, Bibliotecas python análise de dados (pandas, openxl, plotly), Frameworks python (Dash, Pygame), Básico de html e css -->
-                <i class="fa-brands fa-git-alt"></i>
-                <h3>Versionamento de código</h3>
-                <p>O versionamento de código é uma prática essencial na gestão de projetos de desenvolvimento de software, e o GitHub se destaca como uma plataforma fundamental nesse contexto. Ao adotar o GitHub como ferramenta de versionamento, os desenvolvedores podem solucionar uma série de problemas e aprimorar significativamente o fluxo de trabalho de desenvolvimento de software.</p>
-                
-            </div>
-
-        </div>
-            
-    </section>
-
-    <!-- Design - Projetos -->
-    <section class="projetos" id="projetos">
-        <h2 class="heading">Últimos <span>Projetos</span></h2>
-
-        <div class="projetos-container">
-            
-            <div class="projeto-box">
-                <img src="anexos/dashboard-project.jpg" alt="">
-                <div class="projeto-layer">
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+        <!-- Página do Perfil -->
+        <div class="book">
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="anexos/perfil_update.jpeg" alt="">
+                    <h1>Erick Daniel</h1>
+                    <h3>Desenvolvedor Backend</h3>
+                    <div class="social-media">
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    </div>
                     
-                    <h4>Dashboard de Análise</h4>
-                    <!--<p>Este trabalho foi apresentado à disciplina de Contabilidade de Custos e Gerencial, no Centro de Informática UFPE. O qual visa observar as Despesas Empenhadas, Despesas Liquidadas, Despesas Pagas e Inscrições de Restos a Pagar Processados e Não Processados, com foco às funções da Seguridade Social, as quais são: Assistência Social, Previdência Social e Saúde, no período de 2019 a 2021.</p>-->
-                    <p>Projeto de análise de gastos de Seguridade Social no Brasil.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Sou aluno do Centro de Informática da UFPE, cursando Sistemas de Informação (SI). Venho me qualificando para o mercado de TI, criando experiência com linguagem de programação Python, tecnologias contemporâneas, trabalho em equipe e liderança.</p>
+                    
+                    <div class="btn-box">
+                        <a href="#" class="btn">Baixar CV</a>
+                        <a href="#" class="btn contact-me">Entre em Contato</a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="projeto-box">
-                <img src="anexos/sockets-project.png" alt="">
-                <div class="projeto-layer">
-                    <h4>Aplicação de Sockets TCP e UDP</h4>
-                    <!--<p>Uma aplicação de sockets cliente-servidor que oferece um serviço de geração de senhas. A aplicação possui duas versões, uma que utiliza o protocolo UDP (User Datagram Protocol) e outra que utiliza o protocolo TCP (Transmission Control Protocol). Além disso, há um servidor DNS simples que registra os domínios dos servidores e recebe requisições dos clientes. Após a conclusão do serviço prestado pelo servidor, seu domínio é removido do servidor DNS.</p>-->
-                    <p>Uma aplicação de sockets cliente-servidor.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+            <!-- Página 1 e 2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!-- Página 1 (Experiência)-->
+                <div class="page-front">
+                    <h1 class="title">Experiência</h1>
+
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2023 - 2024</span>
+                            <h3>Monitor de Lógica para Computação</h3>
+                            <p>• Atribuições: Tirar dúvidas de alunos, Ministrar aulas, Elaborar avaliações, Corrigir avaliações;<br>
+                                • Este papel aprimorou minha capacidade de comunicar conceitos aprendidos e reforçou o compromisso 
+                                de contribuir ativamente para o desenvolvimento acadêmico dos estudantes;
+                                </p>
+                        </div>
+                        
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2024 - 2024</span>
+                            <h3>Gerente de Projeto</h3>
+                            <p>Em um projeto integrado envolvendo diversas disciplinas para solucionar a 
+                                complexidade da jornada do aluno no programa de bolsa de manutenção acadêmica do Instituto Federal de Pernambuco em Recife, 
+                                minha função foi coordenar e liderar uma equipe multifuncional em um dos estágios do ciclo de vida do projeto.</p>
+                        </div>
+
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2022 - Presente</span>
+                            <h3>Freelancer</h3>
+                            <p>Como freelancer, busco projetos desafiadores que me permitam impactar positivamente a sociedade. Como um dos trabalhos, desenvolvi um Dashboard de 
+                                Análise de Gastos para promover transparência na gestão pública. Minha dedicação é usar a tecnologia como meio para catalisar mudanças positivas.</p>
+                        </div>
+                    </div>
+
+                    <span class="number-page">1</span>
+
+                    <!-- Botão Next -->
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class='bx bx-chevron-right' ></i>
+                    </span>
+                </div>
+
+                <!-- Página 2 (Educação) -->
+                <div class="page-back">
+                    <h1 class="title">Formação Acadêmica</h1>
+                    
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2019 - 2021</span>
+                            <h3>Ensino Médio - EREM Augusto Severo</h3>
+                            <p>Foi onde estive imerso em uma fase crucial de minha educação, onde explorei uma variedade de disciplinas acadêmicas e desenvolvendo habilidades essenciais.</p>
+                        </div>
+                        
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2022 - 2026</span>
+                            <h3>Graduação - Universidade Federal de Pernambuco</h3>
+                            <p>É onde estou experimentando uma notável evolução em minha jornada acadêmica, absorvendo conhecimento especializado em programação, 
+                                análise de sistemas e gerenciamento de projetos de TI. </p>
+                        </div>
+                    </div>
+
+                    <span class="number-page">2</span>
+
+                    <!-- Botão Prev -->
+                    <span class="nextprev-btn back" data-page="turn-1">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
                 </div>
             </div>
-                
-            <div class="projeto-box">
-                <img src="anexos/space-attack-project.png" alt="">
-                <div class="projeto-layer">
-                    <h4>Space Attack</h4>
-                    <!--<p>Space Attack é um sistema interativo, inspirado em Star Wars, que consiste em um jogo em que o usuário controla uma nave e destrói asteróides, além de naves inimigas que possam aparecer para causar danos ao player da nave.
-                        Neste projeto, foram aplicados conhecimentos aprendidos durante todo o período na cadeira de Programação 1, que vai desde a lógica de programação até programação orientada ao objeto na linguagem de programação Python.</p>-->
-                    <p>Space Attack é um sistema interativo, inspirado em Star Wars.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+            <!-- Página 3 e 4 -->
+            <div class="book-page page-right turn" id="turn-2">
+                <!-- Página 3 (Serviços) -->
+                <div class="page-front">
+                    <h1 class="title">Meus Serviços</h1>
+
+                    <div class="services-box">
+                        <div class="services-content">
+                            <i class='bx bx-code-alt'></i>
+                            <h3>Desenvolvimento Web</h3>
+                            <p>Front-End, Back-End, Integração de APIs.</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
+                        
+                        <div class="services-content">
+                            <i class='bx bxs-edit-alt'></i>
+                            <h3>Redação de Documentos</h3>
+                            <p>Às necessidades específicas dos clientes.</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
+                        
+                        <div class="services-content">
+                            <i class='bx bx-line-chart'></i>
+                            <h3>Análise de dados</h3>
+                            <p> Coleta, análise e interpretação de dados.</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
+
+                        <div class="services-content">
+                            <i class='bx bxs-pen'></i>
+                            <h3>Design gráfico</h3>
+                            <p>Criação de elementos visuais para impressão ou digital.</p>
+                            <a href="#" class="btn">Ler Mais</a>
+                        </div>
+                    </div>
+                    
+                    <span class="number-page">3</span>
+
+                    <!-- Botão Next -->
+                    <span class="nextprev-btn" data-page="turn-2">
+                        <i class='bx bx-chevron-right' ></i>
+                    </span>
+
+                </div>
+
+                <!-- Página 3 (Skills) -->
+                <div class="page-back">
+                    <h1 class="title">Minhas Skills</h1>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <h3>Front-End</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-html5'></i>HTML</span>
+                                <span><i class='bx bxl-css3'></i>CSS</span>
+                                <span><i class='bx bxl-javascript'></i>JS</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-content">
+                            <h3>Back-End</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-python'></i>Python</span>
+                                <span><i class='bx bxl-nodejs'></i>Node</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-content">
+                            <h3>UI/UX Design</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-figma'></i>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="number-page">4</span>
+
+                    <!-- Botão Prev -->
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
                 </div>
             </div>
-            
-            <div class="projeto-box">
-                <img src="anexos/acervo-jogos-project.png" alt="">
-                <div class="projeto-layer">
-                    <h4>Acervo Jogos</h4>
-                    <!--<p>Coletânea de jogos desenvolvidos utilizando a linguagem Python. Coletânea de jogos desenvolvidos utilizando a linguagem Python. & Snake ou "Jogo da Cobrinha", é um jogo que marcou gerações e esta é uma versão do jogo desenvolvido utilizando a linguagem Python.</p>-->
-                    <p>Coletânea de jogos desenvolvidos utilizando a linguagem Python.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+            <!-- Página 5 e 6 -->
+            <div class="book-page page-right turn" id="turn-3">
+                <!-- Página 5 (Último Projeto do Potifólio) -->
+                <div class="page-front">
+                    <h1 class="title">Último Projeto</h1>
+
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="anexos/DenTIn1.png" alt="">
+                        </div>
+                        
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>DenTIn</h3>
+                                <a href="#">Prévia ao Vivo<i class='bx bx-link-external'></i></a>
+                            </div>
+                            <p>Tecnologias Utilizadas:</p>
+                            <p>A escolha foi baseada em no ambiente coeso facilitando a comunicação entre as equipes, devido ao JS Fullstack.<br>
+                                - Backend: Node.js; SQLite; Sequelize; Express;</p>
+                        </div>
+    
+                        <div class="btn-box">
+                            <a href="#" class="btn">Código Fonte</a>
+                            <a href="#" class="btn">Mais Projetos</a>
+                        </div>
+                    </div>
+
+                    <span class="number-page">5</span>
+
+                    <!-- Botão Next -->
+                    <span class="nextprev-btn" data-page="turn-3">
+                        <i class='bx bx-chevron-right'></i>
+                    </span>
                 </div>
-            </div>
-                
-            <div class="projeto-box">
-                <img src="anexos/estatistica-descritiva-project.png" alt="">
-                <div class="projeto-layer">
-                    <h4>Estatística Descritiva</h4>
-                    <!--<p>Programa de Estatística Descritiva, Medidas de Tendência Central, Medidas de Dispersão.
-                        Programa em desenvolvimento com objetivo de se tornar uma ferramenta estatística capaz de reunir todas as informações descritivas de uma base de dados para análise estatística com um único toque.</p>-->
-                    <p>Programa em desenvolvimento com objetivo de se tornar uma ferramenta estatística.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                <!-- Página 6 (Entre em Contato) -->
+                <div class="page-back">
+                    <h1 class="title">Entre em Contato!</h1>
+                    <div class="contact-box">
+                        <form action="#">
+                            <input type="text" class="field" placeholder="Nome" required>
+                            <input type="email" class="field" placeholder="Endereço de Email" required>
+                            <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Sua Mensagem" required></textarea>
+                            <input type="submit" class="btn" value="Enviar Mensagem">
+                        </form>
+                    </div>
+                    <span class="number-page">6</span>
+
+                    <!-- Botão Prev -->
+                    <span class="nextprev-btn back" data-page="turn-3">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+
+                    <a href="#" class="back-profile">
+                        <p>Perfil</p>
+                        <i class='bx bxs-user'></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Design - Contato -->
-    <section class="contato" id="contato">
-        <h2 class="heading">Contate-<span>me</span>!</h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Nome Completo">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Número de Telefone">
-                <input type="text" placeholder="Assunto do Email">
-            </div>
-            <textarea name="" id="" cols="30" placeholder="Sua Mensagem"></textarea>
-            <input type="submit" value="Enviar Mensagem" class="btn">
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Codehal | All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
