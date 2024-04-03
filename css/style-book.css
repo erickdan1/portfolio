@@ -16,12 +16,12 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #333;
-    --main-color: #00A36C;
+    --main-color: #1cad7c;
     --second-text-color: #555;
     --white-color: #fff;
     --cover-color: linear-gradient(45deg,  #4a4d52, #2a2e36);
     --pages-color: linear-gradient(90deg, #fff, #ddd);
-    --border: .125rem solid #00A36C;
+    --border: .125rem solid #1cad7c;
     --box-shadow: 0 0 .6rem rgba(0, 0, 0, .3);
 }
 
@@ -115,7 +115,8 @@ body {
 }
 
 .profile-page img {
-    max-width: 150px;
+    max-width: 40%;
+    height: auto;
     border-radius: 50%;
     border: .25rem solid var(--main-color);
     margin-bottom: .8rem;
@@ -169,12 +170,12 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 9.5rem;
-    height: 3rem;
+    width: 8rem;
+    height: 2.5rem;
     background: var(--main-color);
     border: var(--border);
     border-radius: .3rem;
-    font-size: 1rem;
+    font-size: 0.88rem;
     color: var(--white-color);
     font-weight: 500;
     margin: 0 1rem;
@@ -404,6 +405,10 @@ body {
     margin: 1rem 0 1.5rem;
 }
 
+.portfolio-box .info-box p {
+    text-align: justify;
+}
+
 .portfolio-box .info-box .info-title {
     display: flex;
     justify-content: space-between;
@@ -502,5 +507,5 @@ body {
 .back-profile:hover p {
     opacity: 1;
     transform: translateY(-50%) scale(1);
-    top: -1.8rem;
+    top: -1.2rem;
 }
