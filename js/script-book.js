@@ -79,9 +79,6 @@ setTimeout(() => {
 }, 2800)
 
 // Animação página de perfil
-setTimeout(() => {
-    pageLeft.style.zIndex = -1;
-}, 3200)
 
 pages.forEach((_, index) => {
     setTimeout(() => {
