@@ -197,7 +197,6 @@ section:nth-child(even) {
 .home-content .text-animate {
     position: relative;
     width: 42rem;
-}
 
 .home-content .text-animate h3 {
     display: block;
@@ -1203,6 +1202,16 @@ section:nth-child(odd) .animate.scroll {
 
 /* KEYFRAMES ANIMATION */
 
+@keyframes textAnimation {
+    0%, 10%, 100% {
+        width: 0;
+    }
+
+    70%, 90% {
+        width: 100%;
+    }
+}
+  
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
