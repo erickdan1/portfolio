@@ -196,30 +196,27 @@ section:nth-child(even) {
 
 .home-content .text-animate {
     position: relative;
-    width: 40.8rem;
-}
+    width: 42rem;
 
 .home-content .text-animate h3 {
+    display: block;
+    display: inline;
     font-size: 3.5rem;
     font-weight: 700;
-    color: transparent;
+    color: var(--main-color);
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-position: -40.8rem 0;
+    background-position: -42rem 0;
 }
 
-.home-content .text-animate h3::before {
-    content: attr(data-text);
-    position: absolute;
+.home-content .text-animate h3 span {
+    display: block;
+    display: inline;
+    font-weight: 700;
     color: var(--main-color);
-    width: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid var(--main-color);
-    animation: textAnimation 6s linear infinite;
 }
 
 .home-content p {
@@ -1214,7 +1211,7 @@ section:nth-child(odd) .animate.scroll {
         width: 100%;
     }
 }
-
+  
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
