@@ -1,3 +1,22 @@
+// animação rodapé
+function handleFooterIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // adicionar classe de animação quando o rodapé estiver visível
+            footer.classList.add('show-animate');
+        } else {
+            // remover classe de animação quando o rodapé não estiver visível
+            footer.classList.remove('show-animate');
+        }
+    });
+}
+
+let footer = document.querySelector('footer');
+
+let footerObserver = new IntersectionObserver(handleFooterIntersection);
+
+footerObserver.observe(footer);
+
 // alternar ícone de menu de navegação
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -40,9 +59,4 @@ window.onscroll = () => {
     // remover icone alternado e a barra de navegação quando clicar nos links (scroll)
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-
-    // animação rodapé
-    let footer = document.querySelector('footer')
-
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight); 
 }

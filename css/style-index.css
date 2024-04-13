@@ -185,7 +185,7 @@ section:nth-child(even) {
 .home-content h1 {
     position: relative;
     display: inline-block;
-    font-size: 5.6rem;
+    font-size: 5.3rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -208,7 +208,7 @@ section:nth-child(even) {
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-position: -41rem 0;
+    background-position: -40.8rem 0;
 }
 
 .home.show-animate .home-content .text-animate h3 {
@@ -746,17 +746,17 @@ span {
     width: 85%;
 }
 
-.projetos {
+.projects {
     position: relative;
 }
 
-.projetos h2 {
+.projects h2 {
     display: inline-block;
     left: 50%;
     transform: translateX(-50%)
 }
 
-.projetos-container {
+.projects-container {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -768,25 +768,25 @@ span {
     position: relative;
 }
 
-.projetos-container .projeto-box {
+.projects-container .project-box {
     position: relative;
     border-radius: .6rem;
     overflow: hidden;
     display: flex;
 }
 
-.projeto-box img {
+.project-box img {
     width: 100%;
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     transition: .5s ease;
 }
 
-.projeto-box:hover img {
+.project-box:hover img {
     filter: brightness(20%);
 }
 
-.projeto-box .projeto-layer {
+.project-box .project-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -803,20 +803,20 @@ span {
     transition: .5s ease;
 }
 
-.projeto-box:hover .projeto-layer {
+.project-box:hover .project-layer {
     transform: translateX(0);
 }
 
-.projeto-layer h4 {
+.project-layer h4 {
     font-size: 2rem;
 }
 
-.projeto-layer p {
+.project-layer p {
     font-size: 1.4rem;
     margin: .3rem 0 1rem;
 }
 
-.projeto-layer a {
+.project-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -826,7 +826,7 @@ span {
     border-radius: 50%;
 }
 
-.projeto-layer a i {
+.project-layer a i {
     font-size: 1rem;
     color: var(--second-bg-color);
 }
@@ -1022,7 +1022,7 @@ section:nth-child(odd) .animate.scroll {
 .education.show-animate .animate.scroll,
 .services.show-animate .animate.animate.scroll,
 .skills.show-animate .animate.scroll,
-.projetos.show-animate .animate.scroll,
+.projects.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
     transition-delay: calc(.2s * var(--i));
@@ -1054,7 +1054,7 @@ section:nth-child(odd) .animate.scroll {
         padding: 2rem 4%;
     }
 
-    .projetos {
+    .projects {
         padding-bottom: 7rem;
     }
 
@@ -1128,17 +1128,17 @@ section:nth-child(odd) .animate.scroll {
         opacity: .6;
     }
 
-    .projetos h2 {
+    .projects h2 {
         margin-bottom: 3rem;
     }
 
-    .projetos-container {
+    .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 617px) {
-    .projetos-container {
+    .projects-container {
         grid-template-columns: 1fr;
     }
 }
@@ -1149,7 +1149,6 @@ section:nth-child(odd) .animate.scroll {
     }
 
     .home-content h1 {
-        display: flex;
         flex-direction: column;
     }
 
@@ -1187,6 +1186,11 @@ section:nth-child(odd) .animate.scroll {
 }
 
 @media (max-width: 371px) {
+
+    html {
+        font-size: 45%;
+    }
+
     .home {
         justify-content: center;
     }
@@ -1201,13 +1205,19 @@ section:nth-child(odd) .animate.scroll {
     .home-content h1 {
         font-size: 5rem;
     }
+
+    .home-content .btn-box {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* KEYFRAMES ANIMATION */
 
 @keyframes homeBgText {
     0%, 10%, 100% {
-        background-position: -41rem 0;
+        background-position: -40.8rem 0;
     }
 
     65%, 85% {
