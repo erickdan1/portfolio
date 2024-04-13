@@ -40,7 +40,7 @@
         <div class="home-content">
             <h1>Oi! Sou o <span>Erick</span><span class="animate" style="--i:2;"></span></h1>
             <div class="text-animate">
-                <h3>Desenvolvedor Backend</h3>
+                <h3><span class="multiText"></span></h3>
                 <span class="animate" style="--i:3;"></span>
             </div>
             <p>Sou aluno do Centro de Informática da UFPE, cursando Sistemas de Informação (SI). Venho me qualificando para o mercado de TI, criando experiência com linguagem de programação Python, tecnologias contemporâneas, trabalho em equipe e liderança.<span class="animate" style="--i:4;"></span></p>
@@ -347,11 +347,20 @@
         </div>
 
         <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
 
             <span class="animate scroll" style="--i:3;"></span>
         </div>
     </footer>
     <script src="js/script-index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".multiText", {
+            strings : ["Desenvolvedor Backend", "Designer Gráfico", "Bacharelando em SI"],
+            loop : true,
+            typeSpeed : 80,
+            backSpeed : 40
+        })
+    </script>
 </body>
 </html>

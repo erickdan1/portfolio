@@ -196,40 +196,28 @@ section:nth-child(even) {
 
 .home-content .text-animate {
     position: relative;
-    width: 40.67rem;
+    width: 42rem;
 }
 
 .home-content .text-animate h3 {
+    display: block;
+    display: inline;
     font-size: 3.5rem;
     font-weight: 700;
-    color: transparent;
+    color: var(--main-color);
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-position: -40.67rem 0;
+    background-position: -42rem 0;
 }
 
-.home.show-animate .home-content .text-animate h3 {
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-}
-
-.home-content .text-animate h3::before {
-    content: '';   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid var(--main-color);
-    z-index: -1;
-}
-
-.home.show-animate .home-content .text-animate h3::before {
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+.home-content .text-animate h3 span {
+    display: block;
+    display: inline;
+    font-weight: 700;
+    color: var(--main-color);
 }
 
 .home-content p {
@@ -1214,31 +1202,6 @@ section:nth-child(odd) .animate.scroll {
 }
 
 /* KEYFRAMES ANIMATION */
-
-@keyframes homeBgText {
-    0%, 10%, 100% {
-        background-position: -40.67rem 0;
-    }
-
-    65%, 85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorText {
-    0%, 10%, 100% {
-        width: 0;
-    }
-
-    65%, 78%, 85% {
-        width: 100%;
-        opacity: 1;
-    }
-
-    75%, 81% {
-        opacity: 0;
-    }
-}
 
 @keyframes aboutSpinner {
     100% {
