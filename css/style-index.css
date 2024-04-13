@@ -197,6 +197,7 @@ section:nth-child(even) {
 .home-content .text-animate {
     position: relative;
     width: 42rem;
+}
 
 .home-content .text-animate h3 {
     display: block;
