@@ -172,7 +172,7 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(anexos/homewall.jpg) no-repeat;
+    background: url('../anexos/homewall.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
