@@ -196,7 +196,7 @@ section:nth-child(even) {
 
 .home-content .text-animate {
     position: relative;
-    width: 40.67rem;
+    width: 40.8rem;
 }
 
 .home-content .text-animate h3 {
@@ -208,28 +208,18 @@ section:nth-child(even) {
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-position: -40.67rem 0;
-}
-
-.home.show-animate .home-content .text-animate h3 {
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
+    background-position: -40.8rem 0;
 }
 
 .home-content .text-animate h3::before {
-    content: '';   
+    content: attr(data-text);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
+    color: var(--main-color);
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
     border-right: 2px solid var(--main-color);
-    z-index: -1;
-}
-
-.home.show-animate .home-content .text-animate h3::before {
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+    animation: textAnimation 6s linear infinite;
 }
 
 .home-content p {
@@ -1215,28 +1205,13 @@ section:nth-child(odd) .animate.scroll {
 
 /* KEYFRAMES ANIMATION */
 
-@keyframes homeBgText {
-    0%, 10%, 100% {
-        background-position: -40.67rem 0;
-    }
-
-    65%, 85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorText {
+@keyframes textAnimation {
     0%, 10%, 100% {
         width: 0;
     }
 
-    65%, 78%, 85% {
+    70%, 90% {
         width: 100%;
-        opacity: 1;
-    }
-
-    75%, 81% {
-        opacity: 0;
     }
 }
 
