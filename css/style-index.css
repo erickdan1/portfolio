@@ -216,22 +216,6 @@ section:nth-child(even) {
     animation-delay: 2s;
 }
 
-.home-content .text-animate h3::before {
-    content: '';   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid var(--main-color);
-    z-index: -1;
-}
-
-.home.show-animate .home-content .text-animate h3::before {
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
-}
-
 .home-content p {
     position: relative;
     font-size: 1.6rem;
@@ -1166,21 +1150,6 @@ section:nth-child(odd) .animate.scroll {
     .home-content h1 {
         font-size: 5.2rem;
     }
-
-    .home-content .text-animate {
-        width: 20.4rem;
-    }
-
-    .home-content .text-animate h3 {
-        font-size: 1.75rem;
-        background-position: -20.4rem 0;
-    }
-    
-    .home.show-animate .home-content .text-animate h3 {
-        animation: homeBgTextSmall 6s linear infinite;
-        animation-delay: 2s;
-    }
-
     .education {
         padding: 10rem 4% 5rem 5%;
     }
@@ -1236,31 +1205,6 @@ section:nth-child(odd) .animate.scroll {
 
     65%, 85% {
         background-position: 0 0;
-    }
-}
-
-@keyframes homeBgTextSmall {
-    0%, 10%, 100% {
-        background-position: -20.4rem 0;
-    }
-
-    65%, 85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorText {
-    0%, 10%, 100% {
-        width: 0;
-    }
-
-    65%, 78%, 85% {
-        width: 100%;
-        opacity: 1;
-    }
-
-    75%, 81% {
-        opacity: 0;
     }
 }
 
