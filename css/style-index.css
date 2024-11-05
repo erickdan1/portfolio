@@ -172,7 +172,7 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('../anexos/homewall.jpg') no-repeat;
+    background: url('../anexos/homewall\ \(2\).png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -185,7 +185,7 @@ section:nth-child(even) {
 .home-content h1 {
     position: relative;
     display: inline-block;
-    font-size: 5.3rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -194,13 +194,18 @@ section:nth-child(even) {
     color: var(--text-color);
 }
 
+.home-content h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
 .home-content .text-animate {
     position: relative;
     width: 40.67rem;
 }
 
 .home-content .text-animate h3 {
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
@@ -711,7 +716,19 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+    width: 40%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
     width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    width: 50%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+    width: 70%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
@@ -728,6 +745,10 @@ span {
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width: 85%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+    width: 90%;
 }
 
 .projects {
